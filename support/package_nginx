@@ -22,7 +22,7 @@ if [ "$S3_BUCKET" == "" ]; then
   exit 1
 fi
 
-PCRE_VERSION=8.32
+PCRE_VERSION=8.33
 
 basedir="$( cd -P "$( dirname "$0" )" && pwd )"
 
@@ -38,7 +38,8 @@ tar xzvf nginx.tgz
 
 # download and extract pcre into contrib directory
 pushd nginx-$NGINX_VERSION/contrib
-curl ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${PCRE_VERSION}.tar.gz -o pcre.tgz
+# curl ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${PCRE_VERSION}.tar.gz -o pcre.tgz
+curl -L http://sourceforge.net/projects/pcre/files/pcre/8.33/pcre-8.33.tar.gz -o pcre.tgz
 tar zvxf pcre.tgz
 popd
 
