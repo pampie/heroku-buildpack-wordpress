@@ -10,9 +10,9 @@ addons:
   - scheduler:standard
 config_vars:
   PATH: /app/bin:/app/vendor/nginx/sbin:/app/vendor/php/bin:/app/vendor/php/sbin:/usr/local/bin:/usr/bin:/bin
-  EMAIL_REPLY_TO: dian.pamilih@gmail.com 
-  EMAIL_FROM: dian.pamilih@gmail.com 
-  EMAIL_NAME: pampie 
+  EMAIL_REPLY_TO: some.email@email.com 
+  EMAIL_FROM: some.email@email.com 
+  EMAIL_NAME: john 
   ENABLE_SYSTEM_ACCESS: false
   FORCE_SSL_LOGIN: false 
   FORCE_SSL_ADMIN: false 
